@@ -20,7 +20,7 @@ module DatabaseCleaner
 
     module OracleDeleteAdapter
       def delete_table(table_name)
-        execute("DELETE FROM #{quote_table_name(table_name)}")
+        execute("DELETE FROM #{quote_table_name(table_name)}") 
       end
     end
   end
